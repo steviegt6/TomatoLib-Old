@@ -1,3 +1,10 @@
-displayName = Tomato Lib
+displayName = Tomato Lib.
 author = convicted tomatopihle (Stevie)
-version = 0.1
+version = 1.0.0
+homepage = TBA
+hideCode =  false
+hideResources = false
+includeSource = true
+buildIgnore = build.txt, .gitattributes, .gitignore, .git/, .vs/, .idea/, bin/, obj/, Thumbs.db
+includePDB = true
+side = both
