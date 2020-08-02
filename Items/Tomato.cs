@@ -8,7 +8,7 @@ namespace TomatoLib.Items
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Booo!");
+            Tooltip.SetDefault("Booooo! That sucked!");
         }
 
         public override void SetDefaults()
