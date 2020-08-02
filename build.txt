@@ -1,4 +1,4 @@
-displayName = Tomato Lib.
+displayName = [c/FF0000:Tomato] [c/00FF00:Lib]
 author = convicted tomatopihle (Stevie)
 version = 1.0.0
 homepage = TBA
