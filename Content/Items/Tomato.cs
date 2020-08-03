@@ -2,7 +2,7 @@
 using Terraria.ModLoader;
 using TomatoLib.Projectiles;
 
-namespace TomatoLib.Items
+namespace TomatoLib.Content.Items
 {
     internal class Tomato : ModItem
     {
@@ -20,7 +20,7 @@ namespace TomatoLib.Items
             item.useTime = item.useAnimation = 10;
             item.rare = ItemRarityID.Red;
             item.maxStack= 99;
-            item.useStyle = 1;
+            item.useStyle = ItemUseStyleID.SwingThrow;
             item.noUseGraphic = true;
             item.UseSound = SoundID.Item1;
             item.consumable = true;

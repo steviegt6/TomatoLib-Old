@@ -3,11 +3,11 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace TomatoLib.Projectiles
+namespace TomatoLib.Content.Projectiles
 {
     public class ThrownTomato : ModProjectile
     {
-        public override string Texture => "TomatoLib/Items/Tomato";
+        public override string Texture => "TomatoLib/Content/Items/Tomato";
 
         public override void SetStaticDefaults()
         {
@@ -35,8 +35,8 @@ namespace TomatoLib.Projectiles
 
             if (projectile.ai[0] >= 10f)
             {
-                projectile.velocity.Y += 1f;
-                projectile.velocity.X *= 0.99f; ;
+                projectile.velocity.Y += 0.2f;
+                projectile.velocity.X *= 0.98f; ;
             }
 
             projectile.rotation += (Math.Abs(projectile.velocity.X) + Math.Abs(projectile.velocity.Y)) * 0.03f * projectile.direction;
