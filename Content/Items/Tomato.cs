@@ -1,6 +1,6 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
-using TomatoLib.Projectiles;
+using TomatoLib.Content.Projectiles;
 
 namespace TomatoLib.Content.Items
 {
