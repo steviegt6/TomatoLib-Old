@@ -48,7 +48,7 @@ namespace TomatoLib.Core.Utils.Localization
         public static void AddConfigOption(Mod mod, string internalName, string displayName, string itemID, Color color, bool itemAppearsAfterText = false)
         {
             ModTranslation modTranslation = mod.CreateTranslation(internalName);
-            string item = itemID != "" ? $"[i:{itemID}]" : "";
+            string item = itemID != "" ? $"[i:{mod.ItemType(itemID)}]" : "";
 
             modTranslation.SetDefault(!itemAppearsAfterText ? item + $"[c/{color.Hex3()}:{displayName}]" : $"[c/{color.Hex3()}:{displayName}]" + item);
             mod.AddTranslation(modTranslation);
@@ -64,7 +64,7 @@ namespace TomatoLib.Core.Utils.Localization
         public static void AddConfigOption(Mod mod, string internalName, string displayName, string itemID, string color, bool itemAppearsAfterText = false)
         {
             ModTranslation modTranslation = mod.CreateTranslation(internalName);
-            string item = itemID != "" ? $"[i:{itemID}]" : "";
+            string item = itemID != "" ? $"[i:{mod.ItemType(itemID)}]" : "";
 
             modTranslation.SetDefault(!itemAppearsAfterText ? item + $"[c/{color}:{displayName}]" : $"[c/{color}:{displayName}]" + item);
             mod.AddTranslation(modTranslation);
