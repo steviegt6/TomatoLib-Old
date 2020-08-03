@@ -1,6 +1,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
+using TomatoLib.Content;
+using TomatoLib.Content.UI;
 using TomatoLib.Core;
 
 namespace TomatoLib
@@ -9,6 +11,8 @@ namespace TomatoLib
     {
         //The bool used for setting the logo texture to that of a tomato along with changing the "tomato text" to rainbow.
         public static bool easterEgg = false;
+
+        internal UIModItem_Hook uIModItem_Hook = new UIModItem_Hook();
 
         private static float tomatoRotation = 0f;
         private Texture2D vanillaLogo;
@@ -21,6 +25,7 @@ namespace TomatoLib
             vanillaLogo2 = Main.logo2Texture;
 
             Main.OnPostDraw += Main_OnPostDraw;
+            HookEvents.UIModItem_OverrideInitialize += uIModItem_Hook.HookEvents_UIModItem_OverrideInitialize;
 
             easterEgg = Main.rand.NextBool(100);
 
