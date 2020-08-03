@@ -17,7 +17,7 @@ namespace TomatoLib
 
             if (Main.gameMenu && ModLoader.GetMod("TerrariaOverhaul") == null)
             {
-                Texture2D tomato = ModContent.GetTexture("TomatoLib/Items/Tomato");
+                Texture2D tomato = ModContent.GetTexture("TomatoLib/Content/Items/Tomato");
                 string text = "Running on Tomato Lib v" + Version;
 
                 Vector2 textPosition = new Vector2(36f, 8f);
