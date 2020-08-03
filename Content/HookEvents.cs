@@ -11,9 +11,9 @@ namespace TomatoLib.Content
 
         public static event Hook_UIModItem_Initialize UIModItem_OverrideInitialize
         {
-            add => HookEndpointManager.Add(typeof(Main).Assembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static), value);
+            add => HookEndpointManager.Add(TomatoLib.TerrariaAssembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static), value);
 
-            remove => HookEndpointManager.Remove(typeof(Main).Assembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static), value);
+            remove => HookEndpointManager.Remove(TomatoLib.TerrariaAssembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static), value);
         }
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework.Graphics;
+using System.Reflection;
 using Terraria;
 using Terraria.ModLoader;
 using TomatoLib.Content;
@@ -13,6 +14,7 @@ namespace TomatoLib
         public static bool easterEgg = false;
 
         internal UIModItem_Hook uIModItem_Hook = new UIModItem_Hook();
+        internal static Assembly TerrariaAssembly = typeof(Main).Assembly;
 
         private static float tomatoRotation = 0f;
         private Texture2D vanillaLogo;
