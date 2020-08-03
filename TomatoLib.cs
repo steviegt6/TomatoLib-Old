@@ -7,6 +7,7 @@ namespace TomatoLib
 {
     public partial class TomatoLib : Mod
     {
+        //The bool used for setting the logo texture to that of a tomato along with changing the "tomato text" to rainbow.
         public static bool easterEgg = false;
 
         private static float tomatoRotation = 0f;
@@ -18,16 +19,10 @@ namespace TomatoLib
         {
             vanillaLogo = Main.logoTexture;
             vanillaLogo2 = Main.logo2Texture;
-        }
-
-        public override void PostSetupContent()
-        {
-            if (Main.rand.NextBool(100))
-            {
-                easterEgg = true;
-            }
 
             Main.OnPostDraw += Main_OnPostDraw;
+
+            easterEgg = Main.rand.NextBool(100);
 
             if (easterEgg)
             {
@@ -41,6 +36,8 @@ namespace TomatoLib
 			Main.logo2Texture = vanillaLogo2;
             vanillaLogo = null;
             vanillaLogo2 = null;
+
+            Main.OnPostDraw -= Main_OnPostDraw;
         }
 	}
 }
