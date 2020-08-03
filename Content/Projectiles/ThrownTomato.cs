@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace TomatoLib.Content.Projectiles
 {
-    public class ThrownTomato : ModProjectile
+    internal class ThrownTomato : ModProjectile
     {
         public override string Texture => "TomatoLib/Content/Items/Tomato";
 
