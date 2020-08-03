@@ -13,7 +13,7 @@ namespace TomatoLib.Content
         {
             add => HookEndpointManager.Add(typeof(Main).Assembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static), value);
 
-            remove => HookEndpointManager.Remove(typeof(Main).Assembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Remove(typeof(Main).Assembly.GetType("Terraria.ModLoader.UI.UIModItem").GetMethod("OnInitialize", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static), value);
         }
     }
 }
