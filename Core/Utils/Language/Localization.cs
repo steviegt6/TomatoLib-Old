@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace TomatoLib.Core.Utils.Localization
+namespace TomatoLib.Core.Utils.Language
 {
     public static class Localization
     {
