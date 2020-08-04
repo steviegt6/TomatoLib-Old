@@ -3,7 +3,6 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.ModLoader;
 using ReLogic.Graphics;
-using TomatoLib.Core;
 
 namespace TomatoLib
 {

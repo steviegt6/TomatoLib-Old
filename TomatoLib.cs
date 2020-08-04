@@ -4,7 +4,6 @@ using Terraria;
 using Terraria.ModLoader;
 using TomatoLib.Content;
 using TomatoLib.Content.UI;
-using TomatoLib.Core;
 
 namespace TomatoLib
 {
@@ -38,13 +37,13 @@ namespace TomatoLib
         }
 
         public override void Unload()
-		{
-			Main.logoTexture = vanillaLogo;
-			Main.logo2Texture = vanillaLogo2;
+        {
+            Main.logoTexture = vanillaLogo;
+            Main.logo2Texture = vanillaLogo2;
             vanillaLogo = null;
             vanillaLogo2 = null;
 
             Main.OnPostDraw -= Main_OnPostDraw;
         }
-	}
+    }
 }
