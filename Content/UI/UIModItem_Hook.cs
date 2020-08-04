@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-using Terraria;
-using Terraria.ModLoader;
-
-namespace TomatoLib.Content.UI
+﻿namespace TomatoLib.Content.UI
 {
-    internal class UIModItem_Hook
-    {
+	internal class UIModItem_Hook
+	{
 		//internal FieldInfo _mod = TomatoLib.TerrariaAssembly.GetType("Terraria.ModLoader.UI.UIModItem").GetField("_mod", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static);
 		//internal string ModName = TomatoLib.TerrariaAssembly.GetType("Terraria.ModLoader.UI.UIModItem").GetField("Name", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static)?.ToString();
 
@@ -18,8 +11,8 @@ namespace TomatoLib.Content.UI
 		//TODO: Recreate all of this method using reflection.
 		//TODO: Add prefix count, etc.
 		internal void HookEvents_UIModItem_OverrideInitialize(HookEvents.Orig_UIModItem_Initialize orig, object self)
-        {
-            orig(self);
+		{
+			orig(self);
 
 			//tModLoader drawing code.
 			/*if (loadedMod != null)
@@ -43,5 +36,5 @@ namespace TomatoLib.Content.UI
 				}
 			}*/
 		}
-    }
+	}
 }
