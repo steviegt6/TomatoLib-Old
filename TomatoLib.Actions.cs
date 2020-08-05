@@ -17,8 +17,8 @@ namespace TomatoLib
                 Texture2D tomato = ModContent.GetTexture("TomatoLib/Content/Items/Tomato");
                 string text = "Running on Tomato Lib v" + Version;
 
-                Vector2 textPosition = new Vector2(tomato.Size().X + 10f, 8f);
-                Vector2 tomatoPositon = new Vector2(8f, 6f) + tomato.Size() * 0.5f;
+                Vector2 textPosition = new Vector2(tomato.Size().X + 10f, 7f);
+                Vector2 tomatoPositon = new Vector2(6f, 6f) + tomato.Size() * 0.5f;
 
                 tomatoRotation += 0.15f;
 
@@ -28,6 +28,20 @@ namespace TomatoLib
                 Main.DrawCursor(Main.DrawThickCursor()); //So the cursor draws over the added menu text.
 
                 spriteBatch.End();
+
+                /*if (Main.menuMode == 0 && showUpdateMessage)
+                {
+                    showUpdateMessage = false;
+                    infoMessage.Show("Hey there!" +
+                        "\nBe sure to update [c/FF0000:Tomato] [c/00FF00:Lib]!", Main.menuMode);
+                }*/
+
+                if (Main.menuMode == 69420)
+                {
+                    //Main.MenuUI.SetState(infoMessage);
+                    //Main.menuMode = 888;
+                    Main.menuMode = 0;
+                }
             }
         }
     }

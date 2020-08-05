@@ -1,1 +1,1 @@
-[c/FF0000:Tomato] [c/00FF00:Lib] is a pretty basic and bare-bones library. While it doesn't provide much to the average modder, it's useful for me personally since it allows me to not have to copy tons of methods over to every mod I make.
+Tomato Lib is a pretty basic and bare-bones library. While it doesn't provide much to the average modder, it's useful for me personally since it allows me to not have to copy tons of methods over to every mod I make.
