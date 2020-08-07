@@ -1,6 +1,8 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 using TomatoLib.Content.Projectiles;
+using TomatoLib.Content.Rarities;
+using TomatoLib.Core;
 
 namespace TomatoLib.Content.Items
 {
@@ -18,7 +20,7 @@ namespace TomatoLib.Content.Items
             item.damage = 5;
             item.value = 0;
             item.useTime = item.useAnimation = 10;
-            item.rare = ItemRarityID.Red;
+            item.rare = TomatoLoader.RarityType<TomatoRarity>();
             item.maxStack= 99;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.noUseGraphic = true;

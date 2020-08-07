@@ -1,7 +1,7 @@
 displayName = [c/FF0000:Tomato] [c/00FF00:Lib]
 author = convicted tomatopihle (Stevie)
-version = 1.0.0
-homepage = TBA
+version = 1.0.1
+homepage = https://github.com/Steviegt6/TomatoLib/wiki/TomatoLib-Home-Page
 hideCode =  false
 hideResources = false
 includeSource = true

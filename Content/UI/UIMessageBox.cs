@@ -69,7 +69,7 @@ namespace TomatoLib.Content.UI
 
                 if (position >= 0)
                 {
-                    Utils.DrawBorderString(spriteBatch, drawText.Item1, new Microsoft.Xna.Framework.Vector2(space.X, space.Y + position), Color.White, 1f);
+                    Utils.DrawBorderString(spriteBatch, drawText.Item1, new Vector2(space.X, space.Y + position), Color.White, 1f);
                 }
 
                 position += drawText.Item2;

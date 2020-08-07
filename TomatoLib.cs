@@ -1,5 +1,4 @@
 using Microsoft.Xna.Framework.Graphics;
-using ReLogic.OS;
 using System.IO;
 using System.Reflection;
 using Terraria;
@@ -44,6 +43,8 @@ namespace TomatoLib
 
             #endregion Version Checking
 
+            TomatoLoader.InitializeContent();
+
             TomatoLoader.AddMod(this);
 
             easterEgg = Main.rand.NextBool(100);
@@ -54,6 +55,10 @@ namespace TomatoLib
             vanillaLogo2 = Main.logo2Texture;
 
             HookEvents.UIModItem_OverrideInitialize += uIModItem_Hook.HookEvents_UIModItem_OverrideInitialize;
+
+            On.Terraria.Item.Prefix += Item_Prefix;
+            On.Terraria.ItemText.NewText += ItemText_NewText;
+            On.Terraria.Main.MouseText += Main_MouseText;
         }
 
         public override void PostSetupContent()

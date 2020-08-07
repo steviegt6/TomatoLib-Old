@@ -4,6 +4,7 @@ using Terraria.GameContent.UI.Elements;
 using Terraria.Localization;
 using Terraria.ModLoader.UI;
 using Terraria.UI;
+using Terraria.ID;
 
 namespace TomatoLib.Content.UI
 {
@@ -102,7 +103,7 @@ namespace TomatoLib.Content.UI
 
         private void OKClick(UIMouseEvent evt, UIElement listeningElement)
         {
-            Main.PlaySound(10);
+            Main.PlaySound(SoundID.MenuOpen);
             Main.menuMode = _gotoMenu;
             if (_gotoState != null)
                 Main.MenuUI.SetState(_gotoState);
@@ -110,7 +111,7 @@ namespace TomatoLib.Content.UI
 
         private void AltClick(UIMouseEvent evt, UIElement listeningElement)
         {
-            Main.PlaySound(10);
+            Main.PlaySound(SoundID.MenuOpen);
             _altAction?.Invoke();
             Main.menuMode = _gotoMenu;
         }
