@@ -7,7 +7,7 @@ namespace TomatoLib.Core
 {
     public partial class TomatoLoader
     {
-        internal static readonly Version version = new Version(1, 0, 1);
+        internal static readonly Version version = new Version(1, 0, 2);
         internal static Version lastLaunchedVersion;
 
         public static void AddMod(Mod mod)
