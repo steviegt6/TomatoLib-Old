@@ -1,2 +1,6 @@
-Tomato Lib is a pretty basic library mod. It has a *completely functioning* ModRarity that allows you to color the item's name while in the inventory, the item text while being hovered on in the hot bar and world, and allows it to be colored while being picked up. Something that hasn't actually been done before.
-Along with all of that, there're a few smaller, miscellaneous features here and there.
+Tomato Lib is a pretty basic library mod designed for mods developed by me.
+
+Features:
+* IL/Detour autoloading.
+* Proper DoT manager.
+* Numerous helpful extension methods.
